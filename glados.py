@@ -11,7 +11,7 @@ if __name__ == '__main__':
     cookies = os.environ.get("GLADOS_COOKIE", []).split("&")
     if cookies[0] == "":
         print('未获取到COOKIE变量') 
-        cookies = []
+        cookies = [eyJ1c2VySWQiOjIxNTQ3LCJfZXhwaXJlIjoxNzU2Mjg0NDE2NjU0LCJfbWF4QWdlIjoyNTkyMDAwMDAwMH0=]
         exit(0)
     url= "https://glados.rocks/api/user/checkin"
     url2= "https://glados.rocks/api/user/status"
